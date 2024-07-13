@@ -17,8 +17,10 @@ const messageSchema = new mongoose.Schema({
     },
 
     //good practice, createdAt, updatedAt (the time the message was sent and created)
-}, {timestamp: true});
+}, { timestamps: true });
 
 const Message = mongoose.model("Message", messageSchema);
 
 export default Message;
+
+
